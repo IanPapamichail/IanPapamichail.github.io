@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Nickolas Adrian Papamichail · Quantum Software Engineer</title>
+<meta name="description" content="Quantum software engineer working on quantum circuit optimization, quantum simulation and high-performance C++ and Python. University of Ioannina, Athens, Greece.">
+<meta name="theme-color" content="#FBFBFD">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nickolas Adrian Papamichail">
+<meta property="og:description" content="Quantum simulation, engineered for speed.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Sora:wght@600;700&display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+
+<nav class="gnav top" aria-label="Sections">
+  <ul><li><a href="#top">Home</a></li><li><a href="#about">About</a></li><li><a href="#work">Work</a></li><li><a href="#lab">Lab</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav>
+
+<main id="top">
+  <!-- ================= HERO ================= -->
+  <section class="hero" data-mode="light">
+    <div class="hero-shell">
+      <h1 class="hero-head">
+        <span class="hero-title"><span class="ln">Hey, I’m Nick!</span></span>
+        <span class="hero-sub">and I’m a Quantum Software Engineer</span>
+      </h1>
+      <nav class="hero-labels" aria-label="Research areas">
+        <a href="#lab">Quantum Simulation</a>
+        <a href="#work">Circuit Optimization</a>
+        <a href="#skills">HPC Integration</a>
+      </nav>
+      <div class="hero-visual">
+        <canvas id="heroCanvas" aria-hidden="true"></canvas>
+        <p class="hero-sea">A sea of probabilities</p>
+        <a class="hero-pill" href="#about">Explore the research <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-labels hero-labels--end">
+        <span>Athens, Greece</span>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to About"><i aria-hidden="true"></i>Scroll</a>
+        <span>Graduating September 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" aria-hidden="true"></div>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="block about" id="about" data-mode="dark">
+    <div class="wrap">
+      <div class="opener center">
+        <p class="t-eyebrow">About</p>
+        <h2 class="t-h1 reveal">Science, designed.</h2>
+      </div>
+      <p class="t-intro reveal center" style="margin-inline:auto">I’m Nickolas, an Informatics and Telecommunications student at the <strong>University of Ioannina</strong>. I work on <strong>quantum circuit optimization</strong>, build <strong>simulations of quantum systems</strong>, and write the <strong>high-performance C++ and Python</strong> that makes them run.</p>
+      <div class="tiles">
+        <div class="tile reveal">
+          <p class="t-label">Education</p>
+          <div class="num"><span class="count" data-to="8.57" data-dec="2">8.57</span><small> /10</small></div>
+          <p class="t-body">BSc in Informatics and Telecommunications, University of Ioannina.<br><span style="color:var(--fg3)">Graduating September 2026.</span></p>
+        </div>
+        <div class="tile reveal">
+          <p class="t-label">Research focus</p>
+          <h3 class="t-h3">Quantum Simulation</h3>
+          <p class="t-body">Hamiltonian modelling, eigenvalue analysis, and VQE and QAOA circuits in Qiskit, benchmarked against controlled baselines.</p>
+        </div>
+        <div class="tile reveal">
+          <p class="t-label">Research focus</p>
+          <h3 class="t-h3">High-Performance Integration</h3>
+          <p class="t-body">Bringing quantum and HPC together: C++ simulation architecture, thread pools, Rust concurrency and FFI bridges to Python.</p>
+        </div>
+      </div>
+      <div class="record reveal">
+        <div><p class="t-label">Thesis</p><h3 class="t-h3" style="margin-top:8px">Beyond Neural: A Quantum Approach to Artificial Cognition</h3></div>
+        <ul class="t-body">
+          <li><span>Integrating Quantum and High-Performance Computing · IBM</span><span>May 2026</span></li>
+          <li><span>IBM Quantum Machine Learning · IBM</span><span>Mar 2026</span></li>
+          <li><span>Elements of Supercomputing · Kajaani University of Applied Sciences</span><span>2026</span></li>
+          <li><span>Award of Distinction, Mathematical Riddles Competition</span><span>2021</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" aria-hidden="true"></div>
+
+  <!-- ================= WORK ================= -->
+  <section class="block" id="work" data-mode="light">
+    <div class="wide">
+      <div class="opener center">
+        <p class="t-eyebrow">Work</p>
+        <h2 class="t-h1 reveal">Selected work.</h2>
+        <p class="t-lead">Filter by the skill you’re hiring for.</p>
+      </div>
+      <div class="filter" id="filter" role="group" aria-label="Filter projects by skill"></div>
+      <p class="t-cap fstatus" id="fstatus" aria-live="polite"></p>
+      <div class="pgrid" id="pgrid"></div>
+    </div>
+
+    <div class="wrap toolkit" id="skills">
+      <div class="opener center">
+        <p class="t-eyebrow">Toolkit</p>
+        <h2 class="t-h1 reveal">Seven languages. Two research lines.</h2>
+      </div>
+      <div class="specs" id="specs"></div>
+    </div>
+  </section>
+
+  <div class="band" aria-hidden="true"></div>
+
+  <!-- ================= LAB ================= -->
+  <section class="block" id="lab" data-mode="dark">
+    <div class="wide">
+      <div class="opener center">
+        <p class="t-eyebrow">Lab</p>
+        <h2 class="t-h1 reveal">Graphene, live.</h2>
+        <p class="t-lead">A tight-binding model of a graphene flake, solved in your browser. Change the physics and watch the electrons respond.</p>
+      </div>
+      <div class="lab-shell">
+        <div class="panel">
+          <div class="hd"><p class="t-label" id="stateTitle">Eigenstate</p><div class="legend t-cap"><span><i></i>ψ &gt; 0</span><span><i class="neg"></i>ψ &lt; 0</span></div></div>
+          <canvas id="latticeCv" width="640" height="560" role="img" aria-label="Graphene flake with the selected electron state drawn on each atom"></canvas>
+        </div>
+        <div class="panel">
+          <div class="hd"><p class="t-label">Energy spectrum</p><p class="t-cap" id="labHint" aria-live="polite">Tap a level</p></div>
+          <canvas id="specCv" width="520" height="560" role="img" aria-label="Energy levels of the flake, filled for occupied states"></canvas>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="ctl"><label>Flake size<output id="oSize">54 atoms</output></label>
+          <div class="seg" id="segSize"><button type="button" data-k="0" aria-pressed="false">6</button><button type="button" data-k="1" aria-pressed="false">24</button><button type="button" data-k="2" aria-pressed="true">54</button><button type="button" data-k="3" aria-pressed="false">96</button></div></div>
+        <div class="ctl"><label for="rT">Hopping, t<output id="oT">2.70 eV</output></label><input id="rT" type="range" min="1" max="3.5" step="0.05" value="2.7"></div>
+        <div class="ctl"><label for="rD">Sublattice offset, Δ<output id="oD">0.00 eV</output></label><input id="rD" type="range" min="0" max="3" step="0.05" value="0"></div>
+        <div class="ctl"><label for="rS">State<output id="oS">HOMO</output></label><input id="rS" type="range" min="1" max="54" step="1" value="27"></div>
+      </div>
+      <div class="readout">
+        <div><p class="t-cap">Atoms</p><b id="vN">54</b></div>
+        <div><p class="t-cap">HOMO–LUMO gap</p><b id="vGap">1.85<small> eV</small></b></div>
+        <div><p class="t-cap">Selected energy</p><b id="vE">0.00<small> eV</small></b></div>
+        <div><p class="t-cap">Bandwidth</p><b id="vW">0.00<small> eV</small></b></div>
+      </div>
+      <p class="t-body center lab-note">Each atom carries one π electron, with hopping −t between neighbours and an energy offset Δ between the two sublattices. Δ = 0 is graphene; raising Δ opens a gap the way boron nitride does. Diagonalised with the Jacobi method, the same model as the <a class="more" href="https://github.com/IanPapamichail/graphene-tight-binding" target="_blank" rel="noopener">graphene-tight-binding repo</a></p>
+    </div>
+  </section>
+
+  <div class="band" aria-hidden="true"></div>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="block contact" id="contact" data-mode="light">
+    <div class="wrap center">
+      <p class="t-eyebrow">Contact</p>
+      <h2 class="t-hero reveal" style="margin-top:12px">Let’s build what comes after classical.</h2>
+      <p class="t-lead" style="max-width:620px;margin-top:20px">Open to quantum software internships, junior roles in quantum applications, and scientific software, simulation or HPC engineering.</p>
+      <div class="mailrow"><span class="mail" id="mail">papamichailnickolas@gmail.com</span><button class="btn ghost sm" id="copy" type="button">Copy</button></div>
+      <div class="cvrow">
+        <a class="btn" href="cv/Nickolas_Papamichail_Quantum_Software_CV.pdf" download data-cv>Quantum software CV</a>
+        <a class="btn ghost" href="cv/Nickolas_Papamichail_Scientific_Software_CV.pdf" download data-cv>Scientific software CV</a>
+        <a class="btn ghost" id="booking" href="#" target="_blank" rel="noopener" hidden>Book a 20-minute call</a>
+      </div>
+      <p class="t-cap cvmsg" id="cvmsg" aria-live="polite">One page, PDF.</p>
+
+      <div class="duo">
+        <div class="panel" id="askPanel">
+          <p class="t-label">Ask about my work</p>
+          <h3 class="t-h3">Quick answers.</h3>
+          <p class="t-body">Pick a question. Every answer comes straight from my CV.</p>
+          <div class="faq" id="faq" role="group" aria-label="Questions"></div>
+          <div class="answer" id="answer"></div>
+          <p class="sr-only" id="answerSr" aria-live="polite"></p>
+        </div>
+
+        <div class="panel">
+          <p class="t-label">Write to me</p>
+          <h3 class="t-h3">A ready-to-send message.</h3>
+          <form id="brief" class="field" style="gap:16px">
+            <div class="kinds" role="radiogroup" aria-label="What is this about">
+              <label><input type="radio" name="kind" value="Research collaboration" checked><span>Research collaboration</span></label>
+              <label><input type="radio" name="kind" value="Internship or junior role"><span>Internship or junior role</span></label>
+              <label><input type="radio" name="kind" value="Consulting project"><span>Consulting</span></label>
+              <label><input type="radio" name="kind" value="Something else"><span>Something else</span></label>
+            </div>
+            <div class="field"><label for="bName">Your name</label><input id="bName" autocomplete="name" placeholder="Maria Ioannou"></div>
+            <div class="field"><label for="bOrg">Organisation <span style="font-weight:400;color:var(--fg3)">(optional)</span></label><input id="bOrg" autocomplete="organization" placeholder="Lab or company"></div>
+            <div class="field"><label for="bMsg">What do you need?</label><textarea id="bMsg" placeholder="A sentence or two is enough."></textarea></div>
+            <div class="row"><button class="btn" type="submit">Write my message</button></div>
+          </form>
+          <div id="draftBox" hidden>
+            <div class="draft" id="draft"></div>
+            <div class="row" style="margin-top:12px"><button class="btn sm" type="button" id="copyDraft">Copy message</button><a class="more" id="mailto" href="#">Open in email app</a></div>
+            <p class="t-cap" style="margin-top:8px">Send it to papamichailnickolas@gmail.com.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="links">
+        <a class="more" href="https://github.com/IanPapamichail" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="wrap">
+      <footer class="t-fine"><span>Copyright © 2026 Nickolas Adrian Papamichail. All rights reserved.</span><span>Athens, Greece</span></footer>
+    </div>
+  </section>
+</main>
+
+<!-- Libraries (pinned versions) -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<!-- Site code -->
+<script src="assets/js/content.js" defer></script>
+<script src="assets/js/ui.js" defer></script>
+<script src="assets/js/lab.js" defer></script>
+<script src="assets/js/faq.js" defer></script>
+<script src="assets/js/hero3d.js" defer></script>
+<script src="assets/js/motion.js" defer></script>
+</body>
+</html>
