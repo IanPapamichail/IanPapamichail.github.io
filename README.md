@@ -17,22 +17,5 @@ Personal site of a quantum software engineer working on quantum circuit optimiza
 
 HTML · CSS · JavaScript · three.js · GSAP · Lenis. No build step, no server, no API keys.
 
-## Run locally
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open http://localhost:8000.
-
-## Edit
-
-- Projects, skills, Q&A: `assets/js/content.js`
-- Page text: `index.html`
-- CVs: `cv/`
-
-## Deploy
-
-GitHub Pages → Settings → Pages → Deploy from a branch → `main` / `(root)`.
 
 © Nickolas Adrian Papamichail. All rights reserved.
